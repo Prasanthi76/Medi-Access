@@ -3,6 +3,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+const authRoutes = require("./routes/authRoutes");
+
 const app = express();
 
 // Middleware
@@ -15,6 +17,9 @@ mongoose
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
+// Routes
+app.use("/api/auth", authRoutes);
+
 // Test Route
 app.get("/", (req, res) => {
   res.json({
@@ -22,7 +27,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// Server
+// Start Server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
