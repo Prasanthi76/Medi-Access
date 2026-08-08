@@ -1,0 +1,250 @@
+/* =========================
+   FULL HOME PAGE
+========================= */
+
+.home-page {
+  min-height: 100vh;
+  background: #eee6ff;
+  color: #30204f;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 76px;
+
+  background: #32164f;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 42px;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   LOGO / BRAND
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-name {
+  color: white;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.hospital-logo {
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #d8c1f3;
+}
+
+
+/* =========================
+   LOGIN / REGISTER
+========================= */
+
+.nav-button {
+  background: #20ad5c;
+
+  color: white !important;
+
+  padding: 13px 25px;
+
+  border-radius: 9px;
+
+  font-size: 17px !important;
+  font-weight: 700 !important;
+
+  transition: 0.2s;
+}
+
+.nav-button:hover {
+  background: #178c4a;
+}
+
+
+/* =========================
+   HOME CONTENT
+========================= */
+
+.home-content {
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  text-align: center;
+
+  padding-top: 245px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.main-heading {
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  color: #30204f;
+
+  font-size: 50px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.home-description {
+  margin-top: 25px;
+  margin-bottom: 42px;
+
+  color: #4c4057;
+
+  font-size: 21px;
+
+  font-weight: 400;
+}
+
+
+/* =========================
+   HOME BUTTONS
+========================= */
+
+.home-buttons {
+  display: flex;
+
+  gap: 28px;
+}
+
+
+/* =========================
+   FIND DOCTOR / HOSPITAL
+========================= */
+
+.action-button {
+  min-width: 220px;
+
+  padding: 16px 28px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #20ad5c;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.action-button:hover {
+  background: #178c4a;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: auto;
+
+    padding: 18px 20px;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .home-content {
+    padding-top: 120px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-heading {
+    font-size: 36px;
+  }
+
+  .home-description {
+    font-size: 17px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+}

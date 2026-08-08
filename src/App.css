@@ -1,0 +1,421 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f6fb;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  background-color: #301934;
+  border-bottom: 2px solid #7d6385;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 35px;
+}
+
+.logo {
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+
+/* =========================
+   GREEN BUTTONS
+========================= */
+
+.green-btn {
+  background-color: #2e8b57;
+  color: white !important;
+
+  padding: 10px 18px;
+  border-radius: 7px;
+
+  font-weight: 600 !important;
+  border: 1px solid #2e8b57;
+}
+
+.green-btn:hover {
+  background-color: #246b45;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 50px 20px;
+}
+
+.home-content {
+  max-width: 900px;
+}
+
+.home h1 {
+  display: inline-block;
+
+  color: #301934;
+  background-color: #e5d6eb;
+
+  font-size: 50px;
+  font-weight: 700;
+
+  padding: 12px 22px;
+  border-radius: 10px;
+
+  margin-bottom: 25px;
+}
+
+.home p {
+  color: #555;
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.btn {
+  display: inline-block;
+
+  background-color: #2e8b57;
+  color: white;
+
+  padding: 13px 24px;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #246b45;
+}
+
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.page-container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 40px auto;
+}
+
+.page-title {
+  display: block;
+
+  width: fit-content;
+  margin: 0 auto 35px;
+
+  color: #301934;
+  background-color: #e5d6eb;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  padding: 10px 20px;
+  border-radius: 9px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card-container {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(270px, 1fr)
+  );
+
+  gap: 25px;
+}
+
+.card {
+  background-color: white;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  padding: 25px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  color: #301934;
+
+  font-size: 23px;
+
+  margin-bottom: 18px;
+}
+
+.card p {
+  color: #555;
+
+  font-size: 16px;
+
+  margin-bottom: 15px;
+}
+
+.card .btn {
+  margin-top: 8px;
+}
+
+
+/* =========================
+   HIGHLIGHT LABELS
+========================= */
+
+.highlight-label {
+  display: inline-block;
+
+  background-color: #e5d6eb;
+  color: #301934;
+
+  padding: 5px 9px;
+
+  border-radius: 5px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+
+  margin: 45px auto;
+
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+
+  color: #301934;
+
+  background-color: #e5d6eb;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  color: #301934;
+
+  font-weight: 700;
+
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #bbb;
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #301934;
+}
+
+.form-button {
+  width: 100%;
+
+  background-color: #2e8b57;
+  color: white;
+
+  border: none;
+  border-radius: 7px;
+
+  padding: 13px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.form-button:hover {
+  background-color: #246b45;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-container {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 40px auto;
+}
+
+.dashboard-title {
+  text-align: center;
+
+  color: #301934;
+  background-color: #e5d6eb;
+
+  padding: 12px;
+
+  border-radius: 9px;
+
+  margin-bottom: 30px;
+}
+
+.dashboard-cards {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+
+  gap: 20px;
+}
+
+.dashboard-card {
+  background-color: white;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  border: 1px solid #ddd;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h3 {
+  color: #301934;
+
+  margin-bottom: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .home h1 {
+    font-size: 36px;
+  }
+
+  .home p {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .page-title {
+    font-size: 30px;
+  }
+}
