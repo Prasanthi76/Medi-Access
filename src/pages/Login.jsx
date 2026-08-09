@@ -42,7 +42,9 @@ function Login() {
 
       {/* Login Form */}
       <main className="form-container">
-        <h1>Login to Medi Access</h1>
+        <h1 className="login-title">
+  Login to Medi Access
+</h1>
 
         <form onSubmit={handleLogin}>
           <div className="form-group">

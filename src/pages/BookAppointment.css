@@ -1,0 +1,186 @@
+/* PAGE */
+
+.appointment-page {
+  min-height: 100vh;
+  background: #eee6f7;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 55px 20px;
+  box-sizing: border-box;
+}
+
+
+/* CARD */
+
+.appointment-card {
+  width: 100%;
+  max-width: 560px;
+
+  background: white;
+
+  padding: 38px 42px 45px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 25px rgba(50, 19, 79, 0.12);
+
+  box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+.appointment-header {
+  width: 100%;
+
+  background: #e5d3ef;
+
+  border-radius: 10px;
+
+  padding: 20px 15px;
+
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* HEADING */
+
+.appointment-header h1 {
+  margin: 0;
+
+  color: #32134f;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  white-space: normal;
+}
+
+
+/* SMALL TEXT */
+
+.appointment-header p {
+  margin: 10px 0 0;
+
+  color: #5a4a63;
+
+  font-size: 15px;
+}
+
+
+/* FORM */
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* LABELS */
+
+.appointment-form label {
+  color: #32134f;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  margin: 0 0 9px;
+
+  text-align: left;
+}
+
+
+/* INPUTS + SELECT */
+
+.appointment-form input,
+.appointment-form select {
+  width: 100%;
+
+  height: 50px;
+
+  padding: 0 14px;
+
+  margin: 0 0 22px;
+
+  border: 1px solid #d2c5d9;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #302936;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+
+  outline: none;
+}
+
+
+/* FOCUS */
+
+.appointment-form input:focus,
+.appointment-form select:focus {
+  border-color: #32134f;
+
+  box-shadow: 0 0 0 2px rgba(50, 19, 79, 0.1);
+}
+
+
+/* BOOK BUTTON */
+
+.appointment-form button {
+  width: 100%;
+
+  height: 52px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #20a85a;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.appointment-form button:hover {
+  background: #178746;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .appointment-page {
+    padding: 30px 15px;
+  }
+
+  .appointment-card {
+    padding: 25px 20px 30px;
+  }
+
+  .appointment-header h1 {
+    font-size: 28px;
+  }
+
+}

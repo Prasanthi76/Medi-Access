@@ -10,7 +10,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f6fb;
+  background-color: #eee5f5;
   color: #222;
 }
 
@@ -22,7 +22,6 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
-
 
 /* =========================
    NAVBAR
@@ -62,7 +61,6 @@ button {
   color: white;
 }
 
-
 /* =========================
    GREEN BUTTONS
 ========================= */
@@ -82,7 +80,6 @@ button {
   background-color: #246b45;
 }
 
-
 /* =========================
    HOME PAGE
 ========================= */
@@ -95,7 +92,6 @@ button {
   align-items: center;
 
   text-align: center;
-
   padding: 50px 20px;
 }
 
@@ -121,7 +117,6 @@ button {
 .home p {
   color: #555;
   font-size: 20px;
-
   margin-bottom: 30px;
 }
 
@@ -150,7 +145,6 @@ button {
   background-color: #246b45;
 }
 
-
 /* =========================
    PAGE CONTAINER
 ========================= */
@@ -177,7 +171,6 @@ button {
   padding: 10px 20px;
   border-radius: 9px;
 }
-
 
 /* =========================
    CARDS
@@ -207,24 +200,19 @@ button {
 
 .card h2 {
   color: #301934;
-
   font-size: 23px;
-
   margin-bottom: 18px;
 }
 
 .card p {
   color: #555;
-
   font-size: 16px;
-
   margin-bottom: 15px;
 }
 
 .card .btn {
   margin-top: 8px;
 }
-
 
 /* =========================
    HIGHLIGHT LABELS
@@ -242,7 +230,6 @@ button {
 
   font-weight: 700;
 }
-
 
 /* =========================
    FORMS
@@ -263,6 +250,8 @@ button {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* LOGIN / REGISTER / APPOINTMENT HEADING */
+
 .form-container h1 {
   text-align: center;
 
@@ -270,12 +259,21 @@ button {
 
   background-color: #e5d6eb;
 
-  padding: 10px;
+  padding: 12px 10px;
 
   border-radius: 8px;
 
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  white-space: nowrap;
 }
+
+/* FORM GROUP */
 
 .form-group {
   margin-bottom: 18px;
@@ -289,7 +287,11 @@ button {
   font-weight: 700;
 
   margin-bottom: 7px;
+
+  text-align: center;
 }
+
+/* EMAIL / PASSWORD / SELECT BOXES */
 
 .form-group input,
 .form-group select {
@@ -297,7 +299,12 @@ button {
 
   padding: 12px;
 
-  border: 1px solid #bbb;
+  background-color: white;
+
+  color: #222;
+
+  border: 2px solid #222;
+
   border-radius: 7px;
 
   font-size: 16px;
@@ -305,10 +312,21 @@ button {
   outline: none;
 }
 
+/* INPUT PLACEHOLDER */
+
+.form-group input::placeholder {
+  color: #777;
+}
+
+/* INPUT FOCUS */
+
 .form-group input:focus,
 .form-group select:focus {
   border-color: #301934;
+  box-shadow: 0 0 0 2px #e5d6eb;
 }
+
+/* FORM BUTTON */
 
 .form-button {
   width: 100%;
@@ -328,7 +346,6 @@ button {
 .form-button:hover {
   background-color: #246b45;
 }
-
 
 /* =========================
    DASHBOARD
@@ -379,21 +396,17 @@ button {
 
 .dashboard-card h3 {
   color: #301934;
-
   margin-bottom: 10px;
 }
-
 
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 768px) {
-
   .navbar {
     flex-direction: column;
     gap: 15px;
-
     padding: 15px;
   }
 
@@ -417,5 +430,10 @@ button {
 
   .page-title {
     font-size: 30px;
+  }
+
+  .form-container h1 {
+    font-size: 26px;
+    white-space: normal;
   }
 }
