@@ -20,68 +20,106 @@
 
 .doctors-navbar {
   width: 100%;
-  height: 72px;
-  background: #ffffff;
+  height: 78px;
+  padding: 0 55px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 7%;
-  border-bottom: 1px solid #e7dff1;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+
+  background: #35145c;
+  box-sizing: border-box;
 }
 
-.doctors-logo {
-  text-decoration: none;
-  color: #4c376b;
-  font-size: 23px;
-  font-weight: 700;
+/* Medi Access + Hospital Logo */
+
+.doctors-navbar .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
 }
 
-.doctors-nav-links {
+.doctors-navbar .hospital-logo {
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation */
+
+.doctors-navbar .nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.doctors-nav-links a {
+.doctors-navbar .nav-links a {
   text-decoration: none;
-  color: #4b4650;
-  font-size: 15px;
+  color: white;
+  font-size: 16px;
   font-weight: 500;
-  transition: 0.2s;
 }
 
-.doctors-nav-links a:hover {
-  color: #8f6bb5;
-}
+/* Active Doctors */
 
-.doctors-nav-links .active {
-  color: #8b62b5;
+.doctors-navbar .nav-links a.active {
   font-weight: 700;
+  color: #d9ffd9;
 }
 
-.nav-login,
-.nav-register {
-  padding: 10px 20px;
+/* Login */
+
+.doctors-navbar .login-btn {
+  padding: 10px 22px;
   border-radius: 8px;
-}
 
-.nav-login {
-  border: 1px solid #a98ac8;
-  color: #76549a !important;
-}
-
-.nav-register {
-  background: #8c68b0;
+  background: #43a047;
   color: white !important;
+
+  font-weight: 600 !important;
 }
 
+/* Register */
 
+.doctors-navbar .register-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+
+  background: #43a047;
+  color: white !important;
+
+  font-weight: 600 !important;
+}
+
+/* Hover */
+
+.doctors-navbar .login-btn:hover,
+.doctors-navbar .register-btn:hover {
+  background: #2e7d32;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .doctors-navbar {
+    height: auto;
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .doctors-navbar .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
 /* =========================================
    HERO
 ========================================= */

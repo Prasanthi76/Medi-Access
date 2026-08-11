@@ -98,27 +98,35 @@ function Doctors() {
   return (
     <div className="doctors-page">
 
-      {/* NAVBAR */}
-      <nav className="doctors-navbar">
-        <Link to="/" className="doctors-logo">
-          🏥 <span>Medi Access</span>
-        </Link>
+     {/* Navbar */}
+<nav className="navbar doctors-navbar">
 
-        <div className="doctors-nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/doctors" className="active">
-            Doctors
-          </Link>
-          <Link to="/hospitals">Hospitals</Link>
-          <Link to="/login" className="nav-login">
-            Login
-          </Link>
-          <Link to="/register" className="nav-register">
-            Register
-          </Link>
-        </div>
-      </nav>
+  <div className="logo">
+    <span>Medi Access</span>
+    <span className="hospital-logo">🏥</span>
+  </div>
 
+  <div className="nav-links">
+    <Link to="/">Home</Link>
+
+    <Link to="/doctors" className="active">
+      Doctors
+    </Link>
+
+    <Link to="/hospitals">
+      Hospitals
+    </Link>
+
+    <Link to="/login" className="login-btn">
+      Login
+    </Link>
+
+    <Link to="/register" className="register-btn">
+      Register
+    </Link>
+  </div>
+
+</nav>
       {/* HERO */}
       <section className="doctors-hero">
         <p className="hero-small-title">
