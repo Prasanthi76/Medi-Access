@@ -67,14 +67,10 @@ function Hospitals() {
 
       {/* Header */}
       <section className="hospital-header">
-        <p className="small-heading">FIND THE RIGHT HEALTHCARE FACILITY</p>
+        
+        <h1>HOSPITALS NEAR BY YOU</h1>
 
-        <h1>Find Hospitals Near You</h1>
-
-        <p>
-          Search hospitals by name, location or department and find
-          the healthcare facility that suits your needs.
-        </p>
+  
       </section>
 
       {/* Search */}

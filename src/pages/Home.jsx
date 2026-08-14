@@ -117,20 +117,11 @@ function Home() {
 
       <section className="hero-section">
 
-        <p className="hero-small-title">
-          SMART HEALTHCARE DISCOVERY
-        </p>
-
         <h1 className="hero-title">
-          Find the Right Doctor
-          <br />
-          For Your Healthcare Needs
+          SMART HEALTHCARE DISCOVERY
         </h1>
 
-        <p className="hero-description">
-          Find doctors and hospitals based on your symptoms,
-          location and budget, and book your appointment easily.
-        </p>
+        
 
 
         {/* =========================
@@ -407,8 +398,7 @@ function Home() {
         <p>
           SMART SPECIALIST SUGGESTION
         </p>
-
-        <h2>
+         <h2>
           Not sure which specialist you need?
         </h2>
 
@@ -417,6 +407,8 @@ function Home() {
           specialist suggestion.
         </span>
 
+
+        
         <br />
 
         <Link to="/symptoms">
@@ -438,17 +430,11 @@ function Home() {
 
         <div className="section-heading">
 
-          <p>
-            OUR SPECIALIZATIONS
-          </p>
-
           <h2>
-            Find Doctors by Department
+             SPECIALIZATIONS
           </h2>
 
-          <span>
-            Choose a department to find the right specialist.
-          </span>
+          
 
         </div>
 
@@ -483,139 +469,9 @@ function Home() {
       </section>
 
 
-      {/* =========================
-          FEATURED HOSPITALS
-      ========================= */}
+      
 
-      <section className="featured-section">
-
-        <div className="section-heading">
-
-          <p>
-            HEALTHCARE CENTRES
-          </p>
-
-          <h2>
-            Featured Hospitals
-          </h2>
-
-          <span>
-            Explore hospitals and healthcare services.
-          </span>
-
-        </div>
-
-
-        <div className="hospital-grid">
-
-          {hospitals.slice(0, 3).map((hospital) => (
-
-            <div
-              className="hospital-card"
-              key={hospital.id}
-            >
-
-              <div className="hospital-icon">
-                🏥
-              </div>
-
-              <h3>
-                {hospital.name}
-              </h3>
-
-              <p>
-                📍 {hospital.location}
-              </p>
-
-              <p>
-                Multiple departments available
-              </p>
-
-              <Link to="/hospitals">
-
-                <button>
-                  View Hospital
-                </button>
-
-              </Link>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </section>
-
-
-      {/* =========================
-          TOP DOCTORS
-      ========================= */}
-
-      <section className="top-doctors-section">
-
-        <div className="section-heading">
-
-          <p>
-            HEALTHCARE PROFESSIONALS
-          </p>
-
-          <h2>
-            Top Doctors
-          </h2>
-
-          <span>
-            Explore doctors from different specializations.
-          </span>
-
-        </div>
-
-
-        <div className="doctor-grid">
-
-          {doctors.slice(0, 3).map((doctor) => (
-
-            <div
-              className="doctor-card"
-              key={doctor.id}
-            >
-
-              <div className="doctor-image">
-                👨‍⚕️
-              </div>
-
-              <h3>
-                {doctor.name}
-              </h3>
-
-              <p>
-                {doctor.specialization}
-              </p>
-
-              <p>
-                ⭐ {doctor.rating}
-              </p>
-
-              <p>
-                Consultation: ₹{doctor.fee}
-              </p>
-
-              <Link to="/doctors">
-
-                <button>
-                  View Doctor
-                </button>
-
-              </Link>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </section>
-
+     
 
       {/* =========================
           TESTIMONIALS
@@ -625,17 +481,11 @@ function Home() {
 
         <div className="section-heading">
 
-          <p>
-            PATIENT EXPERIENCES
-          </p>
-
           <h2>
-            What Our Patients Say
+            PATIENT EXPERIENCES
           </h2>
 
-          <span>
-            Making healthcare discovery simple and accessible.
-          </span>
+          
 
         </div>
 

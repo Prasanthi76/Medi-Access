@@ -40,8 +40,12 @@
   font-weight: 700;
 }
 
+/* Hospital logo is on the RIGHT side of Medi Access */
 .hospital-logo {
   font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links {
@@ -61,6 +65,7 @@
   color: #d9c1ff;
 }
 
+/* Green Login/Register buttons */
 .nav-button {
   background: #20b765;
   padding: 13px 25px;
@@ -79,7 +84,10 @@
 
 .hero-section {
   text-align: center;
-  padding: 70px 25px 55px;
+
+  /* More breathing space around heading and search */
+  padding: 65px 25px 60px;
+
   background: linear-gradient(
     180deg,
     #eee5ff 0%,
@@ -94,19 +102,17 @@
   margin-bottom: 18px;
 }
 
+
+/* SMART HEALTHCARE DISCOVERY */
 .hero-title {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.15;
-  margin: 0 auto 20px;
+
+  /* Space between heading and search box */
+  margin: 0 auto 45px;
+
   color: #35145c;
   font-weight: 800;
-}
-
-.hero-description {
-  max-width: 850px;
-  margin: 0 auto 35px;
-  font-size: 19px;
-  line-height: 1.6;
 }
 
 
@@ -116,13 +122,19 @@
 
 .search-container {
   max-width: 1100px;
+
+  /* Keeps search box clearly separated from heading */
   margin: 0 auto;
+
   background: white;
-  padding: 25px;
+  padding: 28px;
   border-radius: 18px;
+
   box-shadow: 0 8px 30px rgba(53, 20, 92, 0.12);
+
   display: grid;
   grid-template-columns: 1.6fr 1fr 0.9fr auto;
+
   gap: 18px;
   align-items: end;
 }
@@ -144,11 +156,15 @@
 .search-field select {
   width: 100%;
   box-sizing: border-box;
+
   padding: 13px 14px;
+
   border: 1px solid #cfc3df;
   border-radius: 8px;
+
   background: white;
   color: #24113f;
+
   font-size: 15px;
   outline: none;
 }
@@ -161,12 +177,17 @@
 
 .search-button {
   border: none;
+
   background: #20b765;
   color: white;
+
   padding: 13px 28px;
+
   border-radius: 8px;
+
   font-size: 16px;
   font-weight: 700;
+
   cursor: pointer;
 }
 
@@ -248,6 +269,7 @@ section:not(.hero-section) {
 .doctor-grid {
   max-width: 1200px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -257,9 +279,13 @@ section:not(.hero-section) {
   background: white;
   border-radius: 16px;
   padding: 25px;
+
   text-align: center;
+
   box-shadow: 0 5px 20px rgba(53, 20, 92, 0.09);
+
   border: 1px solid #eadff7;
+
   transition: transform 0.2s ease;
 }
 
@@ -270,12 +296,16 @@ section:not(.hero-section) {
 .doctor-image {
   width: 75px;
   height: 75px;
+
   margin: 0 auto 15px;
+
   background: #eee3ff;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 38px;
 }
 
@@ -293,10 +323,14 @@ section:not(.hero-section) {
 .doctor-card button,
 .hospital-card button {
   border: none;
+
   background: #35145c;
   color: white;
+
   padding: 10px 18px;
+
   border-radius: 7px;
+
   cursor: pointer;
   margin-top: 12px;
 }
@@ -314,6 +348,7 @@ section:not(.hero-section) {
 .hospital-grid {
   max-width: 1200px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -321,11 +356,16 @@ section:not(.hero-section) {
 
 .hospital-card {
   background: white;
+
   border-radius: 16px;
   padding: 25px;
+
   text-align: center;
+
   border: 1px solid #eadff7;
+
   box-shadow: 0 5px 20px rgba(53, 20, 92, 0.09);
+
   transition: transform 0.2s ease;
 }
 
@@ -353,6 +393,7 @@ section:not(.hero-section) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 7px;
   margin-top: 15px;
 }
@@ -360,7 +401,9 @@ section:not(.hero-section) {
 .hospital-departments span {
   background: #eee3ff;
   color: #4a2670;
+
   padding: 6px 10px;
+
   border-radius: 20px;
   font-size: 13px;
 }
@@ -377,14 +420,18 @@ section:not(.hero-section) {
 
 .symptom-section > p {
   color: #76509f;
+
   font-size: 14px;
   font-weight: 700;
+
   letter-spacing: 1px;
 }
 
 .symptom-section h2 {
   color: #35145c;
+
   font-size: 31px;
+
   margin: 10px 0;
 }
 
@@ -394,12 +441,17 @@ section:not(.hero-section) {
 
 .action-button {
   margin-top: 22px;
+
   padding: 12px 23px;
+
   border: none;
   border-radius: 8px;
+
   background: #35145c;
   color: white;
+
   font-weight: 700;
+
   cursor: pointer;
 }
 
@@ -415,19 +467,27 @@ section:not(.hero-section) {
 .department-grid {
   max-width: 1200px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
   gap: 20px;
 }
 
 .department-card {
   background: white;
+
   border: 1px solid #eadff7;
   border-radius: 14px;
+
   padding: 25px 15px;
+
   text-align: center;
+
   cursor: pointer;
+
   box-shadow: 0 4px 15px rgba(53, 20, 92, 0.07);
+
   transition: all 0.2s ease;
 }
 
@@ -438,13 +498,17 @@ section:not(.hero-section) {
 
 .department-card span {
   display: block;
+
   font-size: 34px;
+
   margin-bottom: 12px;
 }
 
 .department-card h3 {
   margin: 0;
+
   color: #35145c;
+
   font-size: 17px;
 }
 
@@ -473,16 +537,22 @@ section:not(.hero-section) {
 .testimonial-grid {
   max-width: 1100px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   gap: 25px;
 }
 
 .testimonial-card {
   background: white;
+
   padding: 28px;
+
   border-radius: 15px;
+
   text-align: center;
+
   box-shadow: 0 5px 20px rgba(53, 20, 92, 0.08);
 }
 
@@ -508,9 +578,13 @@ section:not(.hero-section) {
 .footer {
   background: #35145c;
   color: white;
+
   padding: 50px 55px 20px;
+
   display: grid;
+
   grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+
   gap: 40px;
 }
 
@@ -527,7 +601,9 @@ section:not(.hero-section) {
 
 .footer-column p {
   line-height: 1.6;
+
   margin: 0;
+
   color: #e4d9f2;
 }
 
@@ -542,9 +618,13 @@ section:not(.hero-section) {
 
 .footer-bottom {
   grid-column: 1 / -1;
+
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+
   padding-top: 18px;
+
   text-align: center;
+
   color: #d8c9e8;
 }
 
@@ -591,7 +671,9 @@ section:not(.hero-section) {
 
   .navbar {
     flex-direction: column;
+
     gap: 18px;
+
     padding: 18px;
   }
 
@@ -600,8 +682,15 @@ section:not(.hero-section) {
     justify-content: center;
   }
 
+  .hero-section {
+    padding: 50px 20px 45px;
+  }
+
   .hero-title {
-    font-size: 34px;
+    font-size: 30px;
+
+    /* Mobile lo kuda heading-search gap */
+    margin-bottom: 35px;
   }
 
   .hero-description {
@@ -625,6 +714,7 @@ section:not(.hero-section) {
 
   .footer {
     grid-template-columns: 1fr;
+
     padding: 40px 25px 20px;
   }
 }
