@@ -1,0 +1,526 @@
+/* ================================
+   HOSPITALS PAGE
+================================ */
+
+.hospitals-page {
+  min-height: 100vh;
+  background: #f4effb;
+  color: #222;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.hospitals-page .navbar {
+  width: 100%;
+  height: 78px;
+  padding: 0 55px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #35145c;
+  border-bottom: 1px solid #8f6bb5;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.hospitals-page .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+
+/* Hospital logo */
+
+.hospital-logo {
+  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.hospitals-page .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hospitals-page .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* Hover */
+
+.hospitals-page .nav-links a:hover {
+  opacity: 0.85;
+}
+
+
+/* ================================
+   LOGIN BUTTON
+================================ */
+
+.hospitals-page .login-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+
+  background: #39a852;
+  color: white !important;
+
+  font-weight: 600 !important;
+}
+
+
+/* ================================
+   REGISTER BUTTON
+================================ */
+
+.hospitals-page .register-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+
+  background: #39a852;
+  color: white !important;
+
+  font-weight: 600 !important;
+}
+
+.hospitals-page .login-btn:hover,
+.hospitals-page .register-btn:hover {
+  background: #2f8f45;
+}
+
+
+/* ================================
+   HOSPITAL HEADER
+================================ */
+
+.hospital-header {
+  text-align: center;
+
+  /* Heading and search bar spacing */
+  padding: 45px 20px 20px;
+}
+
+.hospital-header h1 {
+  margin: 0;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  color: #222222;
+
+  letter-spacing: 0px;
+}
+
+
+/* ================================
+   SEARCH SECTION
+================================ */
+
+.hospital-search {
+  width: min(1050px, 90%);
+
+  /* Space between heading and search box */
+  margin: 20px auto 50px;
+
+  padding: 25px;
+
+  background: white;
+  border-radius: 14px;
+
+  display: flex;
+  gap: 15px;
+
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 5px 20px rgba(80, 50, 100, 0.08);
+}
+
+
+/* Search input and dropdown */
+
+.hospital-search input,
+.hospital-search select {
+  height: 44px;
+
+  border: 1px solid #b9a7cc;
+  border-radius: 7px;
+
+  padding: 0 12px;
+
+  font-size: 15px;
+
+  background: white;
+  color: #222;
+
+  box-sizing: border-box;
+}
+
+
+/* Search input */
+
+.hospital-search input {
+  width: 360px;
+}
+
+
+/* Dropdown */
+
+.hospital-search select {
+  width: 190px;
+}
+
+
+/* Clear button */
+
+.hospital-search button {
+  height: 44px;
+
+  padding: 0 18px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #8060ad;
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.hospital-search button:hover {
+  background: #6f5099;
+}
+
+
+/* ================================
+   RESULTS SECTION
+================================ */
+
+.hospital-results {
+  width: min(1150px, 92%);
+
+  margin: auto;
+
+  padding-bottom: 70px;
+
+  text-align: center;
+}
+
+
+/* Small heading */
+
+.results-heading {
+  margin: 0;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+}
+
+
+/* Available Hospitals */
+
+.hospital-results h2 {
+  margin: 10px 0 5px;
+
+  font-size: 30px;
+}
+
+
+/* Hospital count */
+
+.hospital-results > p {
+  margin-bottom: 30px;
+}
+
+
+/* ================================
+   HOSPITAL CARDS
+================================ */
+
+.hospital-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  text-align: left;
+}
+
+
+/* Card */
+
+.hospital-card {
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  box-shadow: 0 6px 18px rgba(80, 50, 100, 0.1);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* Card hover */
+
+.hospital-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(80, 50, 100, 0.15);
+}
+
+
+/* Hospital icon */
+
+.hospital-icon {
+  font-size: 38px;
+
+  margin-bottom: 10px;
+}
+
+
+/* Hospital name */
+
+.hospital-card h3 {
+  margin: 5px 0 12px;
+
+  font-size: 21px;
+}
+
+
+/* Card paragraphs */
+
+.hospital-card p {
+  margin: 8px 0;
+}
+
+
+/* Location */
+
+.hospital-location {
+  font-weight: 600;
+}
+
+
+/* ================================
+   DEPARTMENTS
+================================ */
+
+.department-list {
+  margin-top: 18px;
+}
+
+
+/* Department heading */
+
+.department-list strong {
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+
+/* Department tags container */
+
+.department-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+
+/* Department tag */
+
+.department-tags span {
+  padding: 5px 9px;
+
+  background: #eee5f8;
+
+  border-radius: 15px;
+
+  font-size: 12px;
+}
+
+
+/* ================================
+   BOOK APPOINTMENT BUTTON
+================================ */
+
+.hospital-btn {
+  display: block;
+
+  margin-top: 20px;
+
+  padding: 11px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  background: #9b7dcc;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+
+.hospital-btn:hover {
+  background: #8060ad;
+}
+
+
+/* ================================
+   NO RESULTS
+================================ */
+
+.no-results {
+  grid-column: 1 / -1;
+
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 15px;
+}
+
+
+.no-results h3 {
+  margin-bottom: 10px;
+}
+
+
+/* ================================
+   RESPONSIVE - TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .hospital-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .hospital-search {
+    flex-wrap: wrap;
+  }
+
+
+  .hospital-search input {
+    width: 100%;
+  }
+
+
+  .hospital-search select {
+    flex: 1;
+  }
+
+
+  .hospital-header h1 {
+    font-size: 38px;
+  }
+}
+
+
+/* ================================
+   RESPONSIVE - MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  /* Navbar */
+
+  .hospitals-page .navbar {
+    height: auto;
+
+    padding: 15px 20px;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  /* Navigation */
+
+  .hospitals-page .nav-links {
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+
+  /* Heading */
+
+  .hospital-header {
+    padding: 35px 15px 15px;
+  }
+
+
+  .hospital-header h1 {
+    font-size: 32px;
+
+    line-height: 1.2;
+  }
+
+
+  /* Hospital cards */
+
+  .hospital-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Search */
+
+  .hospital-search {
+    flex-direction: column;
+
+    margin-top: 15px;
+  }
+
+
+  .hospital-search input,
+  .hospital-search select,
+  .hospital-search button {
+    width: 100%;
+  }
+}

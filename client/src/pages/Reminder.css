@@ -1,0 +1,307 @@
+/* =========================================
+   MEDI ACCESS - REMINDER PAGE
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.reminder-page {
+  min-height: 100vh;
+  background: #f7f3fc;
+  color: #2d2435;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.reminder-navbar {
+  width: 100%;
+  min-height: 78px;
+  padding: 0 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #35145c;
+}
+
+.reminder-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.reminder-logo span:last-child {
+  font-size: 27px;
+}
+
+.reminder-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.reminder-nav-links a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reminder-nav-links a:hover {
+  color: #d9c1ff;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.reminder-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 55px 20px 80px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.reminder-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reminder-header p {
+  margin: 0 0 8px;
+
+  color: #80609f;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.reminder-header h1 {
+  margin: 0 0 10px;
+
+  color: #35145c;
+  font-size: 36px;
+}
+
+.reminder-header span {
+  color: #6d6575;
+  font-size: 16px;
+}
+
+
+/* =========================================
+   REMINDER CARD
+========================================= */
+
+.reminder-card {
+  background: white;
+
+  border: 1px solid #e6dced;
+  border-radius: 20px;
+
+  padding: 35px;
+
+  box-shadow: 0 8px 30px rgba(53, 20, 92, 0.09);
+
+  text-align: center;
+}
+
+.reminder-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eee5ff;
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+.reminder-card h2 {
+  margin: 0 0 8px;
+
+  color: #35145c;
+  font-size: 25px;
+}
+
+.reminder-description {
+  margin: 0 auto 25px;
+
+  max-width: 550px;
+
+  color: #6d6575;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   APPOINTMENT SUMMARY
+========================================= */
+
+.appointment-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+
+  padding: 20px;
+
+  background: #f7f3fc;
+  border: 1px solid #e8def1;
+  border-radius: 14px;
+
+  text-align: left;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.summary-item span {
+  color: #80609f;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.summary-item strong {
+  color: #3e304a;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   REMINDER OPTIONS
+========================================= */
+
+.reminder-options {
+  margin-top: 28px;
+
+  text-align: left;
+}
+
+.reminder-options h3 {
+  margin: 0 0 15px;
+
+  color: #35145c;
+  font-size: 18px;
+}
+
+.reminder-option {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 15px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid #e2d8eb;
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  color: #443c49;
+  font-size: 15px;
+}
+
+.reminder-option:hover {
+  background: #f7f3fc;
+  border-color: #bca5d2;
+}
+
+.reminder-option input {
+  width: 17px;
+  height: 17px;
+
+  accent-color: #35145c;
+}
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.save-reminder-button {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 13px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #20b765;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.save-reminder-button:hover {
+  background: #189653;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .reminder-navbar {
+    padding: 18px 20px;
+
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .reminder-nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reminder-container {
+    padding: 40px 15px 60px;
+  }
+
+  .reminder-header h1 {
+    font-size: 30px;
+  }
+
+  .reminder-card {
+    padding: 25px 18px;
+  }
+
+  .appointment-summary {
+    grid-template-columns: 1fr;
+  }
+}

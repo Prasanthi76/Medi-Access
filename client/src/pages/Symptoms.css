@@ -1,0 +1,326 @@
+/* =========================
+   SYMPTOMS PAGE
+========================= */
+
+.symptoms-page {
+  min-height: 100vh;
+  background: #f7f3ff;
+  color: #24113f;
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.symptoms-navbar {
+  min-height: 78px;
+  padding: 0 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #35145c;
+  box-sizing: border-box;
+}
+
+.symptoms-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.symptoms-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.symptoms-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.symptoms-nav-links a:hover {
+  color: #d9c1ff;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.symptoms-main {
+  min-height: calc(100vh - 78px);
+
+  padding: 70px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.symptoms-card {
+  width: 100%;
+  max-width: 850px;
+
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 35px rgba(53, 20, 92, 0.12);
+
+  box-sizing: border-box;
+}
+
+.symptoms-label {
+  margin: 0 0 12px;
+
+  color: #76509f;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.symptoms-card h1 {
+  margin: 0 0 15px;
+
+  color: #35145c;
+
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.symptoms-description {
+  margin: 0 0 32px;
+
+  color: #62566d;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.symptoms-card label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #35145c;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.symptoms-card textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #cfc3df;
+  border-radius: 10px;
+
+  background: white;
+
+  color: #24113f;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+
+  resize: vertical;
+
+  outline: none;
+}
+
+.symptoms-card textarea:focus {
+  border-color: #76509f;
+
+  box-shadow:
+    0 0 0 3px rgba(118, 80, 159, 0.12);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.analyze-button {
+  margin-top: 20px;
+
+  padding: 13px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #35145c;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.analyze-button:hover {
+  background: #4d217c;
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.symptom-result {
+  margin-top: 35px;
+
+  padding: 25px;
+
+  background: #eee5ff;
+
+  border: 1px solid #dccaf2;
+
+  border-radius: 14px;
+}
+
+.result-label {
+  margin: 0 0 8px;
+
+  color: #76509f;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.symptom-result h2 {
+  margin: 0 0 10px;
+
+  color: #35145c;
+
+  font-size: 26px;
+}
+
+.symptom-result p {
+  color: #51445d;
+
+  line-height: 1.6;
+}
+
+.find-doctor-button {
+  margin-top: 10px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #20b765;
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.find-doctor-button:hover {
+  background: #189653;
+}
+
+
+/* =========================
+   EMPTY RESULT
+========================= */
+
+.empty-result {
+  background: #fff7e6;
+  border-color: #f0d7a3;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.symptom-note {
+  margin-top: 30px;
+
+  padding: 17px;
+
+  display: flex;
+  gap: 8px;
+
+  background: #f7f3ff;
+
+  border-radius: 10px;
+
+  color: #62566d;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.symptom-note strong {
+  color: #35145c;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .symptoms-navbar {
+    padding: 18px 20px;
+
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .symptoms-nav-links {
+    gap: 15px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .symptoms-main {
+    padding: 35px 15px;
+  }
+
+  .symptoms-card {
+    padding: 28px 20px;
+  }
+
+  .symptoms-card h1 {
+    font-size: 28px;
+  }
+
+  .symptom-note {
+    flex-direction: column;
+  }
+}

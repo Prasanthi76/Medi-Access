@@ -1,0 +1,533 @@
+/* =========================================
+   MEDI ACCESS - DOCTORS PAGE
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.doctors-page {
+  min-height: 100vh;
+  background: #f7f3fc;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.doctors-navbar {
+  width: 100%;
+  height: 78px;
+  padding: 0 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #35145c;
+  box-sizing: border-box;
+}
+
+/* Medi Access + Hospital Logo */
+
+.doctors-navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.doctors-navbar .hospital-logo {
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation */
+
+.doctors-navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.doctors-navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* =========================================
+   DOCTORS ACTIVE LINK
+   Keep Doctors WHITE - no green color
+========================================= */
+
+.doctors-navbar .nav-links a.active {
+  color: white !important;
+  font-weight: 500;
+  background: transparent;
+}
+
+/* Login */
+
+.doctors-navbar .login-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+
+  background: #20b765;
+  color: white !important;
+
+  font-weight: 600 !important;
+}
+
+/* Register */
+
+.doctors-navbar .register-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+
+  background: #20b765;
+  color: white !important;
+
+  font-weight: 600 !important;
+}
+
+/* Hover */
+
+.doctors-navbar .login-btn:hover,
+.doctors-navbar .register-btn:hover {
+  background: #189653;
+}
+
+.doctors-navbar .nav-links a:not(.login-btn):not(.register-btn):hover {
+  color: #d9c1ff;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.doctors-hero {
+  text-align: center;
+
+  /* Reduced extra space */
+  padding: 38px 45px 18px;
+}
+
+.hero-small-title {
+  color: #80609f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+/* Reduced heading size */
+
+.doctors-hero h1 {
+  margin: 0;
+  color: #3e2f4d;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.doctors-hero > p:last-child {
+  margin-top: 14px;
+  color: #6d6575;
+  font-size: 17px;
+}
+
+
+/* =========================================
+   SEARCH SECTION
+========================================= */
+
+.doctor-search-section {
+  padding: 0 7% 55px;
+}
+
+.search-box {
+  max-width: 1180px;
+  margin: auto;
+
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 30px rgba(78, 50, 100, 0.09);
+  border: 1px solid #e8def1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-wide {
+  grid-column: span 3;
+}
+
+.search-field label {
+  color: #4d4355;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.search-field input,
+.search-field select {
+  width: 100%;
+  height: 44px;
+
+  padding: 0 13px;
+
+  border: 1px solid #d7cbe1;
+  border-radius: 8px;
+
+  background: #fff;
+  color: #333;
+
+  font-size: 14px;
+  outline: none;
+}
+
+.search-field input:focus,
+.search-field select:focus {
+  border-color: #9570b8;
+  box-shadow: 0 0 0 3px rgba(149, 112, 184, 0.12);
+}
+
+.clear-button {
+  width: fit-content;
+
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #eee7f4;
+  color: #65447f;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.clear-button:hover {
+  background: #dfd2eb;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.doctor-results {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+.results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 28px;
+}
+
+.results-label {
+  margin: 0 0 6px;
+
+  color: #9673b8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.results-heading h2 {
+  margin: 0;
+
+  color: #3e304a;
+  font-size: 29px;
+}
+
+.doctor-count {
+  background: #eee6f5;
+  color: #65477f;
+
+  padding: 9px 15px;
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   DOCTOR GRID
+========================================= */
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* =========================================
+   DOCTOR CARD
+========================================= */
+
+.doctor-card {
+  background: white;
+
+  border: 1px solid #e8deef;
+  border-radius: 18px;
+
+  padding: 25px;
+
+  box-shadow: 0 7px 25px rgba(68, 45, 90, 0.08);
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 13px 30px rgba(68, 45, 90, 0.14);
+}
+
+.doctor-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.doctor-avatar {
+  width: 62px;
+  height: 62px;
+
+  background: #eee6f6;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+}
+
+.rating-badge {
+  background: #fff7df;
+  color: #8a691f;
+
+  padding: 7px 10px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.doctor-card h3 {
+  margin: 5px 0 7px;
+
+  color: #2f2735;
+  font-size: 20px;
+}
+
+.doctor-specialization {
+  margin: 0 0 20px;
+
+  color: #8764a7;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.doctor-info {
+  border-top: 1px solid #eee7f3;
+  border-bottom: 1px solid #eee7f3;
+
+  padding: 14px 0;
+}
+
+.doctor-info p {
+  margin: 10px 0;
+
+  color: #5e5664;
+  font-size: 14px;
+
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+}
+
+.doctor-info p span {
+  color: #443c49;
+}
+
+.availability {
+  margin: 16px 0;
+
+  color: #39805b;
+  background: #edf8f1;
+
+  border-radius: 7px;
+  padding: 9px 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.appointment-button {
+  display: block;
+  width: 100%;
+
+  text-align: center;
+  text-decoration: none;
+
+  padding: 12px;
+
+  background: #8d68b1;
+  color: white;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.appointment-button:hover {
+  background: #745295;
+}
+
+
+/* =========================================
+   NO RESULTS
+========================================= */
+
+.no-doctors {
+  background: white;
+
+  border: 1px solid #e6dced;
+  border-radius: 18px;
+
+  text-align: center;
+
+  padding: 60px 20px;
+}
+
+.no-doctors > div {
+  font-size: 40px;
+}
+
+.no-doctors h3 {
+  color: #44344f;
+  margin-bottom: 8px;
+}
+
+.no-doctors p {
+  color: #777;
+}
+
+.no-doctors button {
+  border: none;
+
+  background: #8d68b1;
+  color: white;
+
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+  .doctors-navbar {
+    padding: 0 4%;
+  }
+
+  .doctors-nav-links {
+    gap: 14px;
+  }
+
+  .doctor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-wide {
+    grid-column: span 2;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .doctors-navbar {
+    height: auto;
+    padding: 18px 5%;
+
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .doctors-nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .doctors-hero {
+    padding: 30px 20px 15px;
+  }
+
+  .doctors-hero h1 {
+    font-size: 30px;
+  }
+
+  .search-box {
+    grid-template-columns: 1fr;
+  }
+
+  .search-wide {
+    grid-column: span 1;
+  }
+
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
